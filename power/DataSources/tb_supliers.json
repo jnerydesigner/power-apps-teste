@@ -1,0 +1,36 @@
+[
+  {
+    "ApiId": "/providers/microsoft.powerapps/apis/shared_excel",
+    "CdpRevision": {
+      "BaseUrl": "/",
+      "LastChangedTimeString": "2022-04-19T18:24:59.7670000Z",
+      "RevisionNumber": 1
+    },
+    "ConnectedDataSourceInfoNameMapping": {
+      "__PowerAppsId__": "Row id",
+      "<0_x002e_15mm": "<0.15mm",
+      ">6_x002e_35": ">6.35",
+      "AI203": "AI203",
+      "Fe": "Fe",
+      "Leftlover": "Leftlover",
+      "P": "P",
+      "Quality": "Quality",
+      "Sioo2": "Sioo2",
+      "Suppliers": "Suppliers",
+      "TBN1": "TBN1",
+      "TBN2": "TBN2",
+      "TBN3": "TBN3",
+      "TBN4": "TBN4",
+      "Trains_x0020_max": "Trains max",
+      "Trains_x0020_min": "Trains min",
+      "WMT_x0020_max": "WMT max",
+      "WMT_x0020_min": "WMT min"
+    },
+    "DatasetName": "b!_eMaBfMN8EGVwcAUi11E7CrsbmTGPJlIvTxXu4P_ABINsfzllQ0sT6lca6Q71m_Q.0127DJMBMYCQ42FOWON5AL7G32J4KLDTDJ",
+    "EncodeDataset": true,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "Name": "tb_supliers",
+    "Type": "ConnectedDataSourceInfo"
+  }
+]

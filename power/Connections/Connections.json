@@ -1,0 +1,88 @@
+{
+  "466d2409-517c-4c04-9c2a-dd1c61dc906b": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "OneDrive for Business",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1546/1.0.1546.2665/onedriveforbusiness/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_onedriveforbusiness",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {},
+    "dataSources": [],
+    "dependencies": {},
+    "dependents": [
+      "e86118b9-09ec-4824-b078-21de758af8de"
+    ],
+    "id": "466d2409-517c-4c04-9c2a-dd1c61dc906b"
+  },
+  "87e5036a-d903-45fc-9652-57a167d7a76c": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1578/1.0.1578.2813/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://liveestacio.sharepoint.com/sites/Nitrix": {
+        "dataSources": {
+          "cadSupliers": {
+            "tableName": "322a2960-324f-4391-a7b2-818e83533d2b"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "cadSupliers"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "87e5036a-d903-45fc-9652-57a167d7a76c"
+  },
+  "e86118b9-09ec-4824-b078-21de758af8de": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Excel",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1570/1.0.1570.2764/excel/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_excel",
+      "parameterHints": {
+        "466d2409-517c-4c04-9c2a-dd1c61dc906b": {
+          "value": "fileSource"
+        }
+      },
+      "parameterHintsV2": {
+        "fileSource": {
+          "value": "466d2409-517c-4c04-9c2a-dd1c61dc906b"
+        }
+      }
+    },
+    "datasets": {
+      "b!_eMaBfMN8EGVwcAUi11E7CrsbmTGPJlIvTxXu4P_ABINsfzllQ0sT6lca6Q71m_Q.0127DJMBMYCQ42FOWON5AL7G32J4KLDTDJ": {
+        "dataSources": {
+          "tb_supliers": {
+            "tableName": "tb_supliers"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "tb_supliers"
+    ],
+    "dependencies": {
+      "fileSource": "466d2409-517c-4c04-9c2a-dd1c61dc906b"
+    },
+    "dependents": [],
+    "id": "e86118b9-09ec-4824-b078-21de758af8de"
+  }
+}

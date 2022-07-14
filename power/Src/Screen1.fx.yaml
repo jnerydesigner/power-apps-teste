@@ -1,0 +1,381 @@
+Screen1 As screen:
+
+    Rectangle2 As rectangle:
+        Fill: =RGBA(204, 208, 225, 1)
+        Height: =40
+        Width: =774
+        X: =10
+        Y: =45
+        ZIndex: =1
+
+    Gallery1 As gallery.galleryVertical:
+        Height: =562
+        Items: =cadSupliers
+        Layout: =Layout.Vertical
+        TemplatePadding: =0
+        TemplateSize: =33
+        Width: =772
+        WrapCount: =0
+        X: =12
+        Y: =85
+        ZIndex: =2
+
+        TextInput3 As text:
+            BorderThickness: =0
+            Default: =ThisItem.Supliers
+            Height: =33
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            LineHeight: =1
+            OnSelect: =Select(Parent)
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =10
+            Width: =116
+            X: =39
+            ZIndex: =2
+
+        TextInput3_1 As text:
+            Align: =Align.Center
+            BorderThickness: =0
+            Default: =ThisItem.'WMT min'
+            Height: =33
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            LineHeight: =1
+            OnSelect: =Select(Parent)
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =10
+            Width: =72
+            X: =155
+            ZIndex: =3
+
+        TextInput3_2 As text:
+            Align: =Align.Center
+            BorderThickness: =0
+            Default: =ThisItem.'WMT max'
+            Height: =33
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            LineHeight: =1
+            OnSelect: =Select(Parent)
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =10
+            Width: =72
+            X: =242
+            ZIndex: =4
+
+        TextInput3_3 As text:
+            Align: =Align.Center
+            BorderThickness: =0
+            Default: =ThisItem.'Trains min'
+            Height: =33
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            LineHeight: =1
+            OnSelect: =Select(Parent)
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =10
+            Width: =72
+            X: =321
+            ZIndex: =5
+
+        TextInput3_4 As text:
+            Align: =Align.Center
+            BorderThickness: =0
+            Default: =ThisItem.'Trains max'
+            Height: =33
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            LineHeight: =1
+            OnSelect: =Select(Parent)
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =10
+            Width: =72
+            X: =403
+            ZIndex: =6
+
+        TextInput3_5 As text:
+            Align: =Align.Center
+            BorderThickness: =0
+            Default: =ThisItem.Quality
+            Height: =33
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            LineHeight: =1
+            OnSelect: =Select(Parent)
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =10
+            Width: =99
+            X: =478
+            ZIndex: =7
+
+        TextInput3_6 As text:
+            Align: =Align.Center
+            BorderThickness: =0
+            Default: =ThisItem.Fe
+            Height: =33
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            LineHeight: =1
+            OnSelect: =Select(Parent)
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =10
+            Width: =54
+            X: =581
+            ZIndex: =8
+
+        TextInput3_10 As text:
+            Align: =Align.Center
+            BorderColor: =If(ThisItem.Leftlover =1,RGBA(205, 49, 49, 1),RGBA(230, 186, 24, 1))
+            Color: =If(ThisItem.Leftlover =1,RGBA(255, 255, 255, 1),RGBA(0, 0, 0, 1))
+            Default: =ThisItem.Leftlover
+            Fill: =If(ThisItem.Leftlover = 1,RGBA(255, 0, 0, 1),If(ThisItem.Leftlover=2,RGBA(0, 255, 0, 1), RGBA(255,0,255,1)))
+            Height: =33
+            LineHeight: =1
+            OnSelect: =Select(Parent)
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =10
+            Width: =83
+            X: =688
+            ZIndex: =15
+
+        Checkbox1 As checkbox:
+            BorderStyle: =BorderStyle.None
+            Height: =33
+            OnCheck: =If(Checkbox1.Value = true, lblSupliers.Text = ThisItem.Supliers, "Nada")
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.id
+            Width: =39
+            ZIndex: =16
+
+    Label1 As label:
+        Align: =Align.Center
+        Size: =10
+        Text: ="Suppliers"
+        Width: =130
+        X: =40
+        Y: =45
+        ZIndex: =3
+
+    Label1_1 As label:
+        Align: =Align.Center
+        Size: =10
+        Text: ="WMT min"
+        Width: =82
+        X: =170
+        Y: =45
+        ZIndex: =4
+
+    Label1_2 As label:
+        Align: =Align.Center
+        Size: =10
+        Text: ="WMT max"
+        Width: =82
+        X: =252
+        Y: =45
+        ZIndex: =5
+
+    Label1_3 As label:
+        Align: =Align.Center
+        Size: =10
+        Text: ="Trains min"
+        Width: =82
+        X: =334
+        Y: =45
+        ZIndex: =6
+
+    Label1_4 As label:
+        Align: =Align.Center
+        Size: =10
+        Text: ="Trains max"
+        Width: =82
+        X: =416
+        Y: =45
+        ZIndex: =7
+
+    Label1_5 As label:
+        Align: =Align.Center
+        Size: =10
+        Text: ="Quality"
+        Width: =82
+        X: =498
+        Y: =45
+        ZIndex: =8
+
+    Label1_6 As label:
+        Align: =Align.Center
+        Size: =10
+        Text: ="Fe"
+        Width: =82
+        X: =580
+        Y: =45
+        ZIndex: =9
+
+    Label1_12 As label:
+        Align: =Align.Center
+        Size: =10
+        Text: ="Leftlover"
+        Width: =82
+        X: =702
+        Y: =45
+        ZIndex: =15
+
+    Icon2 As icon.Reload:
+        Height: =47
+        Icon: =Icon.Reload
+        OnSelect: =Refresh(cadSupliers)
+        Width: =20
+        X: =40
+        ZIndex: =16
+
+    Label1_13 As label:
+        Align: =Align.Center
+        Size: =10
+        Text: ="M"
+        Width: =30
+        X: =10
+        Y: =45
+        ZIndex: =17
+
+    Gallery3 As gallery.galleryVertical:
+        Height: =723
+        Items: =IceCream
+        Layout: =Layout.Vertical
+        TemplateSize: =173
+        Width: =394
+        X: =972
+        Y: =45
+        ZIndex: =18
+
+        TextInput1 As text:
+            Align: =Align.Center
+            BorderThickness: =0
+            Default: ="Sorvete"
+            Fill: =RGBA(0, 0, 0, 0.1)
+            OnSelect: =Select(Parent)
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Width: =381
+            Y: =5
+            ZIndex: =1
+
+        TextInput1_1 As text:
+            Align: =Align.Center
+            BorderThickness: =0
+            Default: ="Sabor"
+            Fill: =RGBA(0, 0, 0, 0.1)
+            OnSelect: =Select(Parent)
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Width: =126
+            Y: =45
+            ZIndex: =2
+
+        TextInput1_2 As text:
+            Align: =Align.Center
+            BorderThickness: =0
+            Default: =ThisItem.Flavor
+            Fill: =RGBA(0, 255, 0, 0.1)
+            OnSelect: =Select(Parent)
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Width: =255
+            X: =126
+            Y: =45
+            ZIndex: =3
+
+        TextInput1_3 As text:
+            Align: =Align.Center
+            BorderThickness: =0
+            Default: ="Preço"
+            Fill: =RGBA(0, 0, 0, 0.1)
+            OnSelect: =Select(Parent)
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Width: =126
+            Y: =85
+            ZIndex: =4
+
+        TextInput1_4 As text:
+            Align: =Align.Center
+            BorderThickness: =0
+            Default: =ThisItem.Price
+            Fill: =RGBA(0, 255, 0, 0.1)
+            OnSelect: =Select(Parent)
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Width: =255
+            X: =126
+            Y: =85
+            ZIndex: =5
+
+        TextInput1_5 As text:
+            Align: =Align.Center
+            BorderThickness: =0
+            Default: ="Quantidade"
+            Fill: =RGBA(0, 0, 0, 0.1)
+            OnSelect: =Select(Parent)
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Width: =126
+            Y: =125
+            ZIndex: =6
+
+        TextInput1_6 As text:
+            Align: =Align.Center
+            BorderThickness: =0
+            Default: =ThisItem.Quantity
+            Fill: =RGBA(0, 255, 0, 0.1)
+            OnSelect: =Select(Parent)
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Width: =255
+            X: =126
+            Y: =125
+            ZIndex: =7
+
+    lblSupliers As label:
+        Text: =Checkbox1.Text
+        X: =1037
+        Y: =647
+        ZIndex: =20
+
+    Button3 As button:
+        OnSelect: |-
+            =Collect( IceCream, { Flavor: "Strawberry", Quantity: 300, Price: 25 },{Flavor: "Avocado", Quantity: 100, Price: 30} )
+        Text: ="Button Create"
+        X: =25
+        Y: =700
+        ZIndex: =21
+
