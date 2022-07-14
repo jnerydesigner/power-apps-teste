@@ -206,7 +206,7 @@ Screen1 As screen:
         Checkbox1 As checkbox:
             BorderStyle: =BorderStyle.None
             Height: =33
-            OnCheck: =If(Checkbox1.Value = true, lblSupliers.Text = ThisItem.Supliers, "Nada")
+            OnCheck: =If(Checkbox1.Value = true, Collect(tblColSupleiers,Filter(cadSupliers, ID, Checkbox1.Text)),
             OnSelect: =Select(Parent)
             Text: =ThisItem.id
             Width: =39
