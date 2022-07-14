@@ -724,7 +724,7 @@
 
     Button2 As button:
         OnSelect: =SubmitForm(Form1);
-        Text: ="Criar"
+        Text: ="Criar Registro"
         X: =42
         Y: =591
         ZIndex: =2
