@@ -84,5 +84,30 @@
     },
     "dependents": [],
     "id": "e86118b9-09ec-4824-b078-21de758af8de"
+  },
+  "f19d1c92-d0c3-4424-8b14-a33a334a4880": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1578/1.0.1578.2813/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline"
+    },
+    "datasets": {
+      "https://liveestacio.sharepoint.com/sites/Nitrix": {
+        "dataSources": {
+          "addParamiters": {
+            "tableName": "f6f65607-a1fc-449f-ad89-14bec30caba2"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "addParamiters"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "f19d1c92-d0c3-4424-8b14-a33a334a4880"
   }
 }
