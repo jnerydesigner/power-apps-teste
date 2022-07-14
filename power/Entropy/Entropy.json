@@ -181,7 +181,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "07/14/2022 17:11:22",
+  "HeaderLastSavedDateTimeUTC": "07/14/2022 17:23:34",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "466d2409-517c-4c04-9c2a-dd1c61dc906b": "\"/providers/microsoft.powerapps/apis/shared_onedriveforbusiness/connections/b11b609606604e4a846a186148cc195d\"",
@@ -399,7 +399,7 @@
   "RuleScreenIdWithoutScreen": {},
   "TemplateVersions": {},
   "VolatileProperties": {
-    "AnalysisLoadTime": 1.5567254,
+    "AnalysisLoadTime": 1.5876909,
     "ControlCount": {
       "button": 3,
       "checkbox": 1,
@@ -416,7 +416,7 @@
       "text": 38,
       "typedDataCard": 23
     },
-    "DeserializationLoadTime": 2.7531346,
+    "DeserializationLoadTime": 2.988,
     "ErrorCount": 0
   },
   "WasLocalDatabaseReferencesEmpty": true
