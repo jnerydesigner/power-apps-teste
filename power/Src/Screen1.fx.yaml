@@ -374,8 +374,16 @@ Screen1 As screen:
     Button3 As button:
         OnSelect: |-
             =Collect( IceCream, { Flavor: "Strawberry", Quantity: 300, Price: 25 },{Flavor: "Avocado", Quantity: 100, Price: 30} )
-        Text: ="Button Create"
+        Text: ="Botão Criar"
         X: =25
         Y: =700
         ZIndex: =21
+
+    Button3_1 As button:
+        OnSelect: |-
+            =Collect( IceCream, { Flavor: "Strawberry", Quantity: 300, Price: 25 },{Flavor: "Avocado", Quantity: 100, Price: 30} )
+        Text: ="Botão Editar"
+        X: =240
+        Y: =700
+        ZIndex: =22
 
